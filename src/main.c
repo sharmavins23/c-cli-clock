@@ -13,8 +13,23 @@ int main() {
         // Convert it to a HH:MM:SS string
         char *time_string = timing_convert_time_to_string(time_struct);
 
-        // Print the time string
-        printf("%s", time_string);
+        // Iterate through 0 to 5 (for each row that we're printing)
+        for (int i = 0; i < 5; i++) {
+            // Then, iterate through the digits in the time string
+            for (int j = 0; j < 8; j++) {
+                // Get the current digit
+                char digit = time_string[j];
+                // Get the index of the digit
+                int digit_index = digits_get_digit_index(digit);
+                // Get the splice for the digit
+                const char *splice = digit_get_splice(digit_index, i);
+
+                // Print the splice
+                printf("%s ", splice);
+            }
+            // Print a newline to move to the next row
+            printf("\n");
+        }
 
         // Wait for a short amount of time
         timing_delay_ms(1000);
