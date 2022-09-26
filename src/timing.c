@@ -33,9 +33,9 @@ void timing_free_time_string(char *time_string) {
 
 // Delay the program for a given number of milliseconds
 void timing_delay_ms(int milliseconds) {
-    // Convert milliseconds to microseconds
-    int microseconds = milliseconds * 1000;
+    // Convert milliseconds to seconds
+    double ms = milliseconds * 0.001;
 
     // Delay the program
-    usleep(microseconds);
+    sleep(ms);
 }

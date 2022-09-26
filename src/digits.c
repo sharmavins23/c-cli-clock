@@ -51,7 +51,7 @@ int digits_get_digit_index(char digit) {
 }
 
 // Given an integer and a row access value, return the corresponding splice
-char *digit_get_splice(uint32_t value, uint32_t rowAccess) {
+const char *digit_get_splice(uint32_t value, uint32_t rowAccess) {
     switch (value) {
         case 0:
             return DIGIT0[rowAccess];
