@@ -1,4 +1,5 @@
 #include "cli.h"
+// * Contains all CLI handling functions
 
 // Clear the CLI screen
 void cli_clear(void) {

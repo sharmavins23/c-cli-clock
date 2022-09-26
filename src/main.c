@@ -1,4 +1,5 @@
 #include "main.h"
+// * Main function and entrypoint for the program
 
 int main() {
     // Ensure build works properly
