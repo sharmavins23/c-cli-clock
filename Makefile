@@ -1,18 +1,18 @@
 # Compiler and C-file extensions
-CC 			:= gcc
-SRC_EXT     := c
+CC := gcc
+SRC_EXT := c
 
 # Definitions of filepaths
 INCLUDE_DIR := include
-SRC_DIR 	:= src
-BUILD_DIR 	:= build
+SRC_DIR := src
+BUILD_DIR := build
 
 # Flags
-INCFLAG		:= -I$(INCLUDE_DIR)
-CFLAGS      := $(INCFLAG)
+INCFLAG	:= -I$(INCLUDE_DIR)
+CFLAGS := $(INCFLAG)
 
 # Final target
-TARGET 		:= $(BUILD_DIR)/main
+TARGET := $(BUILD_DIR)/main
 
 # ===== Compilation ============================================================
 
